@@ -52,7 +52,7 @@ function parImpar(valor){
                 }
     }
     if(counStringEval === counString){
-        console.log(`${cabecera} ${result.slice(1,-2)}`);
+        console.log(`${cabecera} ${result.slice(0,-2)}`);
     }
 }
 
