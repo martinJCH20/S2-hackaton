@@ -1,14 +1,14 @@
 
 //Ejercico 0
 function convertirMayuscula(valor){
-    if(valor.trim() == ""){
-        console.log("Este valor no puede ser vacío");
-    }else{
+    const pattern = new RegExp('^[A-Z]+$', 'i'); //Solo letras
+    if(pattern.test(valor)){
         console.log(`Ejercicio 0: ${valor.toUpperCase()}`);
+    }else{
+        console.log(`Ejercicio 0: No se permite vacíos, ni números, ni caractéres especiales`);
     }
 }
-
-convertirMayuscula("Martín");
+convertirMayuscula("Martin");
 
 //Ejercicio 1
 let paises = ['Rusia','Perú','Holanda', 'Suecia'];
