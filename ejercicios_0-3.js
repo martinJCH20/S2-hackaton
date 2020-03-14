@@ -39,8 +39,7 @@ function parImpar(valor){
     if(cabecera == ""){
         counString = valor.length;    
         cabecera = 'Ejercicio 2:';
-        for(let x of valor){    
-            counStringEval += 1;    
+        for(let x of valor){  
             parImpar(x);
         }
     }else{
@@ -50,8 +49,9 @@ function parImpar(valor){
                 else{
                     result = `${result}${valor} es impar, `
                 }
-    }
-    if(counStringEval === counString){
+    }  
+    counStringEval += 1;
+    if(counStringEval > counString){
         console.log(`${cabecera} ${result.slice(0,-2)}`);
     }
 }
